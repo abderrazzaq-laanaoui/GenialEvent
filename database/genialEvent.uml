@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>a32f1539-6063-4b08-a743-52cc2126f034.SCHEMA:genialevent</OriginalElement>
+  <nodes>
+    <node x="623.3351449275362" y="380.0">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.FAIRE</node>
+    <node x="134.85416666666674" y="279.5">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.RESERVATION</node>
+    <node x="616.0" y="0.0">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.GUIDE</node>
+    <node x="1224.5914855072465" y="231.0">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.LIGNES_DEPART</node>
+    <node x="978.2590579710145" y="613.0">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.LIGNES_DESTINATION</node>
+    <node x="1350.2590579710145" y="573.0">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.IMAGE</node>
+    <node x="347.33514492753625" y="140.0">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.UTILISATEUR</node>
+    <node x="944.0090579710145" y="24.0">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.ADMIN</node>
+    <node x="305.7590579710145" y="556.0">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.MODEPAYEMENT</node>
+    <node x="717.4266304347826" y="268.0">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.GUIDER</node>
+    <node x="964.0090579710145" y="206.0">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.VOYAGE</node>
+    <node x="1306.2590579710145" y="382.0">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.LIGNES_IMAGE_VOYAGE</node>
+    <node x="1186.0090579710145" y="36.0">a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.VILLE</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.FAIRE" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.VOYAGE" relationship="REFERENCES">
+      <point x="62.0" y="0.0" />
+      <point x="-78.0" y="65.5" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.RESERVATION" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.VILLE" relationship="REFERENCES">
+      <point x="-15.0" y="-101.0" />
+      <point x="201.85416666666674" y="-17.5" />
+      <point x="1264.0090579710145" y="-17.5" />
+      <point x="0.0" y="-41.0" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.RESERVATION" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.MODEPAYEMENT" relationship="REFERENCES">
+      <point x="0.0" y="101.0" />
+      <point x="216.85416666666674" y="621.0" />
+      <point x="-298.0" y="0.0" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.RESERVATION" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.GUIDE" relationship="REFERENCES">
+      <point x="0.0" y="-101.0" />
+      <point x="216.85416666666674" y="77.0" />
+      <point x="-86.0" y="0.0" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.LIGNES_IMAGE_VOYAGE" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.IMAGE" relationship="REFERENCES">
+      <point x="-11.0" y="40.5" />
+      <point x="0.0" y="-41.0" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.LIGNES_DEPART" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.VILLE" relationship="REFERENCES">
+      <point x="-51.25" y="-40.5" />
+      <point x="1256.3414855072465" y="215.5" />
+      <point x="1264.0090579710145" y="215.5" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.LIGNES_DESTINATION" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.VILLE" relationship="REFERENCES">
+      <point x="108.0" y="19.0" />
+      <point x="1549.7590579710145" y="672.5" />
+      <point x="1549.7590579710145" y="77.0" />
+      <point x="78.0" y="0.0" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.GUIDER" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.GUIDE" relationship="REFERENCES">
+      <point x="0.0" y="-40.5" />
+      <point x="77.42663043478262" y="77.0" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.VOYAGE" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.ADMIN" relationship="REFERENCES">
+      <point x="0.0" y="-161.0" />
+      <point x="0.0" y="53.0" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.FAIRE" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.RESERVATION" relationship="REFERENCES">
+      <point x="-62.0" y="0.0" />
+      <point x="82.0" y="52.0" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.LIGNES_IMAGE_VOYAGE" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.VOYAGE" relationship="REFERENCES">
+      <point x="-113.0" y="0.0" />
+      <point x="1042.0090579710145" y="422.5" />
+      <point x="0.0" y="161.0" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.LIGNES_DEPART" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.VOYAGE" relationship="REFERENCES">
+      <point x="-83.0" y="13.5" />
+      <point x="1176.1340579710145" y="285.0" />
+      <point x="1176.1340579710145" y="367.0" />
+      <point x="78.0" y="0.0" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.LIGNES_DESTINATION" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.VOYAGE" relationship="REFERENCES">
+      <point x="-59.250057971014485" y="-40.5" />
+      <point x="-15.000057971014485" y="161.0" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.FAIRE" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.UTILISATEUR" relationship="REFERENCES">
+      <point x="0.0" y="-52.5" />
+      <point x="685.3351449275362" y="241.5" />
+      <point x="98.0" y="0.5" />
+    </edge>
+    <edge source="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.GUIDER" target="a32f1539-6063-4b08-a743-52cc2126f034.TABLE:genialevent.VOYAGE" relationship="REFERENCES">
+      <point x="62.0" y="0.0" />
+      <point x="-78.0" y="-58.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="706.0" y="338.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
